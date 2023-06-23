@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+            firstname=document.f1.fn.value;
+            lastname=document.f1.ln.value;
+            fullname=firstname +lastname;
+            document.f1.full.value=fullname;
+            // alert("my full name is :"+fullname);
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1>Hi please fill the details</h1>
+
+<form name="f1">
+
+first name :<input type="text" name="fn"><br>
+Last Name :<input type="text" name="ln"><br>
+fullname :<input type="text" name="full"><br>
+
+
+<input type="submit" value="click" onclick="abc()">
+</div>
+</form>
+</body>
+</html>
